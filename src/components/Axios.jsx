@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 
 const Axios = () => {
@@ -22,15 +22,16 @@ const Axios = () => {
         console.log("Bruh")*/
 
     return (
-        <div>
+
+        <div class="position-absolute top-50 start-50 translate-middle"><h1 class="text-info">
+
             {data ? ( // Wenn data nicht null ist (also Daten geladen wurden)
-                <pre>{JSON.stringify(data, null, 2)}</pre> // Zeige die Rohdaten als JSON-String an
-            ) : (
-                <p>Loading...</p> // Anzeige während Daten geladen werden
+                <pre>Nerve:{JSON.stringify(data.nerve, null, 2)}</pre> // Zeige die Rohdaten als JSON-String an
+            ) : (<pre>Loading...</pre> // Anzeige während Daten geladen werden
             )}
+        </h1>
         </div>
     );
-
 
 
 }

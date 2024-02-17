@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import Torn from "./Torn";
+import 'bootstrap/dist/css/bootstrap.css';
+import Axios from "./components/Axios";
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(
@@ -10,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Axios />
   </React.StrictMode>
 );
 
