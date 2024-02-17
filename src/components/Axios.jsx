@@ -5,7 +5,7 @@ const Axios = () => {
     const [data, setData] = useState(null); // Initialisiere data mit null, bis die Daten geladen sind
 
     useEffect(() => {
-        axios.get('https://api.torn.com/user/3220519?selections=basic&key=Qe0wffUhanxHE8Gi')
+        axios.get('https://api.torn.com/user/3220519?selections=bars&key=xBqtr8z8pZurtd3m')
             .then((res) => {
                 setData(res.data); // Setze die Daten aus der Antwort in den Zustand data
             })
@@ -13,6 +13,13 @@ const Axios = () => {
                 console.error('Error fetching data:', error);
             });
     }, []);
+
+
+    /*const nerveCurr = data.nerve.current
+    console.log(nerveCurr)
+
+    if (nerveCurr > 1)
+        console.log("Bruh")*/
 
     return (
         <div>
@@ -23,6 +30,8 @@ const Axios = () => {
             )}
         </div>
     );
+
+
 
 }
 
