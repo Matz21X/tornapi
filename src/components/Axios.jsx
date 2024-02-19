@@ -9,7 +9,6 @@ const Axios = () => {
             try {
                 const response = await axios.get('https://api.torn.com/market/180?selections=itemmarket&key=P0si2JikRMAAK1D3');
                 console.log("BIER")
-                console.log()
                 setData(response.data);// Setze die Daten aus der Antwort in den Zustand data
                 console.log(data.itemmarket[0].cost)
             } catch (error) {
