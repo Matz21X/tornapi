@@ -3,14 +3,15 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css';
 import Beer from "./components/Beer";
 import reportWebVitals from './reportWebVitals';
+//import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+    document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <Beer />
-  </React.StrictMode>
+    <React.StrictMode>
+        <Beer/>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

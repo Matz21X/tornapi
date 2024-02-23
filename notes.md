@@ -1,0 +1,1 @@
+Formel: shares X boughtPrice - 
