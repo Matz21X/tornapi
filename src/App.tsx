@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Axios from "./components/Axios";
+import Beer from "./components/Beer";
 
 function App() {
    return (
